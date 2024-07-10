@@ -136,8 +136,13 @@ nav a:hover {
 
 /* Media Queries para dispositivos móveis */
 @media (max-width: 600px) {
-  svg text {
-    font-size: 8vw; /* Ajuste o tamanho do texto do SVG para telas menores */
+  .quadrado-texto,
+  .quadrado-texto1,
+  .quadrado-texto2,
+  .quadrado-texto3 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .texto-dentro {
