@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
-
+/* Estilo geral */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -16,11 +15,12 @@ svg {
   width: 100%;
   height: auto;
 }
+
 svg text {
   animation: stroke 5s infinite alternate;
   stroke-width: 2;
   stroke: #7C1CFF;
-  font-size: 10vw;
+  font-size: 10vw; /* Ajustado para ser responsivo */
 }
 
 @keyframes stroke {
@@ -107,7 +107,7 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: "Stalemate", sans-serif;
-  font-size: 5vw;
+  font-size: 5vw; /* Ajustado para ser responsivo */
   color: #ffffff;
 }
 
@@ -132,4 +132,31 @@ nav a {
 nav a:hover {
   background-color: #333;
   color: #6145ff;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 600px) {
+  svg text {
+    font-size: 8vw; /* Ajuste o tamanho do texto do SVG para telas menores */
+  }
+
+  .texto-dentro {
+    font-size: 4vw; /* Ajuste o tamanho do texto dentro dos quadrados */
+  }
+
+  .botao-voltar {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .secao-baixo1,
+  .secao-baixo {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .a2 {
+    width: 90%;
+    max-width: none;
+  }
 }
