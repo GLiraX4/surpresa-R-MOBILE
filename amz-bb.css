@@ -52,7 +52,8 @@ h1 {
 .quadrado-texto,
 .quadrado-texto1,
 .quadrado-texto2,
-.quadrado-texto3 {
+.quadrado-texto3,
+.quadrado-texto4,
   width: 100%;
   max-width: 500px;
   background-color: #000000; /* Cor de fundo do quadrado */
