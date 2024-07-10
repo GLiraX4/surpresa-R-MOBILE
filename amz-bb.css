@@ -5,7 +5,6 @@ body {
   background-color: #080808;
 }
 
-
 .wrapper {
   background-color: #080808;
   text-align: center;
@@ -125,7 +124,7 @@ nav a:hover {
   }
 
   .texto-dentro {
-    font-size: 18px;
+    font-size: 28px;
   }
 
   .quadrado-texto {
@@ -133,7 +132,10 @@ nav a:hover {
     padding: 10px;
   }
 
-  .secao-baixo1,
+  .secao-baixo1 {
+    font-size: 14px;
+  }
+
   .secao-baixo {
     font-size: 18px;
   }
