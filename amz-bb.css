@@ -101,10 +101,11 @@ nav a:hover {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 5vw; /* Ajusta o tamanho da fonte dentro dos quadrados */
   }
 
   .texto-dentro {
-    font-size: 6vw; /* Ajuste o tamanho do texto dentro dos quadrados */
+    font-size: 4vw; /* Ajuste o tamanho do texto dentro dos quadrados */
   }
 
   .botao-voltar {
