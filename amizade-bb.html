@@ -1,199 +1,139 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amizade na Bíblia</title>
-  <link rel="stylesheet" href="amz-bb.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #080808;
+}
 
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 10px;
-      background-color: #080808;
-    }
+.wrapper {
+  background-color: #080808;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .wrapper {
-      background-color: #080808;
-      text-align: center;
-      margin-bottom: 20px;
-      padding: 20px; /* Aumenta o espaço interno do wrapper */
-    }
+svg {
+  font-family: "Stalemate", sans-serif;
+  width: 100%;
+  height: 100%;
+}
 
-    svg {
-      font-family: "Stalemate", sans-serif;
-      width: 100%;
-      height: 100%;
-    }
+svg text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #7C1CFF;
+  font-size: 100px;
+}
 
-    svg text {
-      animation: stroke 5s infinite alternate;
-      stroke-width: 2;
-      stroke: #7C1CFF;
-      font-size: 5vw; /* Tamanho responsivo com base na largura da viewport */
-    }
+@keyframes stroke {
+  0% {
+    fill: rgba(9, 0, 204, 0);
+    stroke: rgba(124, 28, 255, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(9, 0, 204, 0);
+    stroke: rgba(124, 28, 255, 1);
+  }
+  80% {
+    fill: rgba(9, 0, 204, 0);
+    stroke: rgba(124, 28, 255, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(9, 0, 204, 1);
+    stroke: rgba(124, 28, 255, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
 
-    @keyframes stroke {
-      0% {
-        fill: rgba(9, 0, 204, 0);
-        stroke: rgba(124, 28, 255, 1);
-        stroke-dashoffset: 25%;
-        stroke-dasharray: 0 50%;
-        stroke-width: 2;
-      }
-      70% {
-        fill: rgba(9, 0, 204, 0);
-        stroke: rgba(124, 28, 255, 1);
-      }
-      80% {
-        fill: rgba(9, 0, 204, 0);
-        stroke: rgba(124, 28, 255, 1);
-        stroke-width: 3;
-      }
-      100% {
-        fill: rgba(9, 0, 204, 1);
-        stroke: rgba(124, 28, 255, 0);
-        stroke-dashoffset: -25%;
-        stroke-dasharray: 50% 0;
-        stroke-width: 0;
-      }
-    }
+.botao-voltar {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #080808;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Margarine", sans-serif;
+}
 
-    .botao-voltar {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #080808;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      font-family: "Margarine", sans-serif;
-    }
+.botao-voltar:hover {
+  background-color: #333;
+  color: #6145ff;
+}
 
-    .botao-voltar:hover {
-      background-color: #333;
-      color: #6145ff;
-    }
+.quadrado-texto {
+  width: calc(100% - 40px);
+  max-width: 500px;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    .quadrado-texto {
-      width: calc(100% - 20px); /* Largura ajustada para ocupar quase toda a largura da tela */
-      max-width: 500px; /* Largura máxima para manter o estilo visual */
-      background-color: #000000;
-      border: 2px solid #ffffff;
-      margin: 10px auto; /* Espaçamento entre os quadrados */
-      padding: 20px;
-      box-sizing: border-box; /* Garante que o padding não aumente a largura total */
-    }
+.texto-dentro {
+  text-align: center;
+  font-family: "Stalemate", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0;
+}
 
-    .texto-dentro {
-      text-align: center;
-      font-family: "Stalemate", sans-serif;
-      font-size: 4vw; /* Tamanho responsivo com base na largura da viewport */
-      color: #ffffff;
-      margin: 0;
-    }
+.secao-baixo1,
+.secao-baixo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-    .secao-baixo1,
-    .secao-baixo {
-      font-family: "Bebas Neue", sans-serif;
-      font-size: 4vw; /* Tamanho responsivo com base na largura da viewport */
-      font-style: normal;
-      color: #fff;
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+.a2 {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
 
-    .a2 {
-      border: 2px solid #ccc;
-      border-radius: 5px;
-      text-align: center;
-      width: 100%; /* Largura ajustada para ocupar toda a largura da tela */
-      padding: 13px;
-      box-sizing: border-box; /* Garante que o padding não aumente a largura total */
-      margin-top: 20px;
-    }
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
 
-    nav a {
-      text-decoration: none;
-      color: #ffffff;
-      padding: 0.5em 1em;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
+nav a:hover {
+  background-color: #333;
+  color: #6145ff;
+}
 
-    nav a:hover {
-      background-color: #333;
-      color: #6145ff;
-    }
-  </style>
-</head>
-<body>
+@media screen and (max-width: 600px) {
+  svg text {
+    font-size: 50px;
+  }
 
-<a href="ray-port.html" class="wrapper">
-  <svg>
-    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-      Amizade na Bíblia
-    </text>
-  </svg>
-</a>
+  .texto-dentro {
+    font-size: 18px;
+  }
 
-<!-- Botão "back" -->
-<a href="index.html" onclick="history.back();" class="botao-voltar">&#8592; Voltar</a>
+  .quadrado-texto {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
 
-<br><br><br>
-
-<div class="quadrado-texto">
-  <p class="texto-dentro">Provérbios 17:17<br>
-    "Em todo o tempo ama o amigo e para a hora da angústia nasce um irmão."
-  </p>
-</div>
-
-<div class="quadrado-texto">
-  <p class="texto-dentro">Romanos 12:10<br>
-    "Amai-vos uns aos outros com amor. Prefiram dar honra aos outros mais do que a si próprio."
-  </p>
-</div>
-
-<div class="quadrado-texto">
-  <p class="texto-dentro"> João 15:12<br>
-    "O meu mandamento é este: Que vos ameis uns aos outros como eu vos amei"
-  </p>
-</div>
-
-<div class="quadrado-texto">
-  <p class="texto-dentro">Provérbios 27:9<br>
-    "Assim como os perfumes alegram a vida, a amizade sincera dá ânimo para viver"
-  </p>
-</div>
-
-<div class="quadrado-texto">
-  <p class="texto-dentro">1 Coríntios 16:14<br>
-    "Todas as vossas coisas sejam feitas com amor"
-  </p>
-</div>
-
-<br><br><br>
-
-<section class="secao-baixo1">
-  <h1>Bônus:</h1>
-</section>
-
-<section class="secao-baixo">
-  <h2>Provérbios 31-10</h2>
-  <p>"Mulher virtuosa quem achará? O seu valor muito excede ao de mil rubis"</p>
-</section>
-
-<nav class="a2">
-  <a href="proverbios.html">Clique aqui</a>
-</nav>
-
-<br><br><br>
-
-</body>
-</html>
+  .secao-baixo1,
+  .secao-baixo {
+    font-size: 18px;
+  }
+}
