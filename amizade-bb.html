@@ -10,49 +10,88 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
 
-<a href="index.html">
-  <div class="wrapper">
-    <svg>
-      <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-        Amizade na Bíblia
-      </text>
-    </svg>
+  svg {
+    font-family: "Stalemate", sans-serif;
+    width: 100%; height: 100%;
+  }
+  svg text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #7C1CFF;
+    font-size: 100px;
+  }
+  @keyframes stroke {
+    0%   {
+      fill: rgba(9,0,204,0); stroke: rgba(124,28,255,1);
+      stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: rgba(9,0,204,0); stroke: rgba(124,28,255,1); }
+    80%  {fill: rgba(9,0,204,0); stroke: rgba(124,28,255,1); stroke-width: 3; }
+    100% {
+      fill: rgba(9,0,204,1); stroke: rgba(124,28,255,0);
+      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+  }
+  </style>
+
+  <a href="index.html">
+    <div class="wrapper">
+      <svg>
+        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+          Amizade na Bíblia
+        </text>
+      </svg>
+    </div>
+  </a>
+
+  <!--botao "back"-->
+  <a href="index.html" onclick="history.back();" class="botao-voltar">&#8592; Voltar</a>
+
+  <br><br><br><br>
+
+  <div class="quadrado-texto">
+    <p class="texto-dentro">Proverbios 17:17<br>
+      "em todo o tempo ama o amigo e  para a hora da angústia nasce um irmão."</p>
   </div>
-</a>
 
-<a href="index.html" onclick="history.back();" class="botao-voltar">&#8592; Voltar</a>
+  <div class="quadrado-texto1">
+    <p class="texto-dentro">Romanos 12:10<br>
+      "Amai-vos uns aos outros com amor.
+      Prefiram dar honra aos outros
+      mais do que a si próprio."</p>
+  </div>
 
-<br><br><br><br>
+  <div class="quadrado-texto2">
+    <p class="texto-dentro"> João 15:12<br>
+      "O meu mandamento é este:
+      Que vos ameis uns aos outros
+      como eu vos amei"</p>
+  </div>
 
-<div class="quadrado-texto">
-  <p class="texto-dentro">Proverbios 17:17<br>"em todo o tempo ama o amigo e para a hora da angústia nasce um irmão."</p>
-</div>
+  <div class="quadrado-texto3">
+    <p class="texto-dentro">1 Coríntios 16:14
+      "Todas as vossas coisas sejam feitas com amor"
+    </p>
+  </div>
 
-<div class="quadrado-texto1">
-  <p class="texto-dentro">Romanos 12:10<br>"Amai-vos uns aos outros com amor. Prefiram dar honra aos outros mais do que a si próprio."</p>
-</div>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div class="quadrado-texto2">
-  <p class="texto-dentro">João 15:12<br>"O meu mandamento é este: Que vos ameis uns aos outros como eu vos amei"</p>
-</div>
+  <section class="secao-baixo1">
+    <h1>Bônus:</h1>
+  </section>
 
-<div class="quadrado-texto3">
-  <p class="texto-dentro">1 Coríntios 16:14<br>"Todas as vossas coisas sejam feitas com amor"</p>
-</div>
+  <section class="secao-baixo">
+    <h2>Proverbios 31-10</h2>
+    <p>"Mulher virtuosa quem achará? o seu valor muito excede ao de mil rubis"</p>
+  </section>
 
-<section class="secao-baixo1">
-  <h1>Bônus:</h1>
-</section>
-
-<section class="secao-baixo">
-  <h2>Proverbios 31-10</h2>
-  <p>"Mulher virtuosa quem achará? o seu valor muito excede ao de mil rubis"</p>
-</section>
-
-<nav class="a2">
-  <a href="proverbios.html">clique aqui</a>
-</nav>
+  <nav class="a2">
+    <a href="proverbios.html">clique aqui</a>
+  </nav>
+  <br><br><br><br>
 
 </body>
 </html>
