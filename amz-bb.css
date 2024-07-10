@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #080808; /* Configura o fundo */
+  background-color: #080808;
 }
 
 .wrapper {
@@ -12,112 +12,85 @@ body {
 h1 {
   text-align: center;
   font-size: 24px;
-  font-family: "Bebas Neue", sans-serif; /* Garantir fonte correta */
 }
 
 .botao-voltar {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #080808; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  text-decoration: none; /* Remove sublinhado padrão */
-  border-radius: 5px; /* Borda arredondada */
-  transition: background-color 0.3s; /* Transição suave de cor de fundo */
-  font-family: "Margarine", sans-serif; /* Garantir fonte correta */
+  background-color: #080808;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Margarine", sans-serif;
 }
 
 .botao-voltar:hover {
-  background-color: #333; /* Cor de fundo alterada ao passar o mouse */
+  background-color: #333;
   color: #6145ff;
 }
 
 .secao-baixo1 {
   font-family: sans-serif;
   font-size: 12px;
-  color: #fff; /* Cor do texto */
-  text-align: left; /* Alinhamento do texto */
-  margin-top: 40px; /* Espaçamento entre os quadrados e a seção */
-  width: 100%;
+  color: #fff;
+  text-align: left;
+  margin-top: 40px;
+  width: 500px; /* Ajuste a largura como desejar */
 }
 
 .secao-baixo {
   font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
   font-style: normal;
-  color: #fff; /* Cor do texto */
-  text-align: center; /* Alinhamento do texto */
-  width: 100%;
+  color: #fff;
+  text-align: center;
+  width: 500px; /* Ajuste a largura como desejar */
 }
 
 .quadrado-texto,
-.quadrado-texto1
-.quadrado-texto2
-.quadrado-texto3
-.quadrado-texto4
-  width: 100%;
-  max-width: 500px;
-  background-color: #000000; /* Cor de fundo do quadrado */
-  border: 2px solid #ffffff; /* Bordas cinzas */
-  position: relative; /* Permite posicionar o texto dentro do quadrado */
-  margin: 20px auto; /* Centraliza o quadrado na tela */
+.quadrado-texto1,
+.quadrado-texto2,
+.quadrado-texto3,
+.quadrado-texto4 {
+  width: 500px; /* Ajuste a largura como desejar */
+  height: 500px; /* Ajuste a altura como desejar */
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  position: relative;
+  margin: 20px auto;
 }
 
 .texto-dentro {
-  position: relative; /* Posicionamento relativo para dentro do quadrado */
-  text-align: center; /* Centraliza o texto */
-  font-family: "Stalemate", sans-serif; /* Garantir fonte correta */
-  font-size: 30px; /* Ajuste o tamanho da fonte */
-  color: #ffffff; /* Cor do texto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Stalemate", sans-serif;
+  font-size: 50px;
+  color: #ffffff;
 }
 
 .a2 {
-  border: 2px solid #ccc; /* Borda do botão */
-  border-radius: 5px; /* Bordas arredondadas */
+  border: 2px solid #ccc;
+  border-radius: 5px;
   text-align: center;
-  width: 100%;
-  padding: 13px; /* Adicione preenchimento interno aos links */
+  width: 110px; /* Defina a largura desejada para a navegação */
+  padding: 13px;
+  justify-content: left;
 }
 
 nav a {
   text-decoration: none;
   color: #ffffff;
   padding: 0.5em 1em;
-  border-radius: 5px; /* Faz borda e arredonda o botão */
+  border-radius: 5px;
   transition: background-color 0.3s;
-  position: relative; /* Adiciona posição relativa para o posicionamento do submenu */
+  position: relative;
 }
 
 nav a:hover {
-  background-color: #333; /* Configura a cor de fundo quando passa o mouse em cima do texto (menu de baixo) */
-  color: #6145ff; /* Configura a cor do texto quando passa o mouse em cima do texto (menu de baixo) */
-}
-
-/* Media Queries para dispositivos móveis */
-@media (max-width: 600px) {
-  .quadrado-texto,
-  .quadrado-texto1,
-  .quadrado-texto2,
-  .quadrado-texto3 {
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  .texto-dentro {
-    font-size: 20px;
-  }
-
-  .botao-voltar {
-    font-size: 16px;
-    padding: 8px 12px;
-  }
-
-  .secao-baixo1,
-  .secao-baixo {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .a2 {
-    width: 100%;
-  }
+  background-color: #333;
+  color: #6145ff;
 }
