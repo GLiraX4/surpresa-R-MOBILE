@@ -65,7 +65,7 @@ h1 {
   position: relative; /* Posicionamento relativo para dentro do quadrado */
   text-align: center; /* Centraliza o texto */
   font-family: "Stalemate", sans-serif; /* Garantir fonte correta */
-  font-size: 4vw; /* Ajuste o tamanho da fonte */
+  font-size: 30px; /* Ajuste o tamanho da fonte */
   color: #ffffff; /* Cor do texto */
 }
 
@@ -102,17 +102,17 @@ nav a:hover {
   }
 
   .texto-dentro {
-    font-size: 5vw;
+    font-size: 20px;
   }
 
   .botao-voltar {
-    font-size: 4vw;
+    font-size: 16px;
     padding: 8px 12px;
   }
 
   .secao-baixo1,
   .secao-baixo {
-    font-size: 4vw;
+    font-size: 16px;
     text-align: center;
   }
 
