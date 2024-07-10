@@ -27,33 +27,33 @@ h1 {
 
 .botao-voltar:hover {
   background-color: #333; /* Cor de fundo alterada ao passar o mouse */
-  color:#6145ff;
+  color: #6145ff;
 }
 
 .secao-baixo1 {
-  font-family:sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
   color: #fff; /* Cor do texto */
   text-align: left; /* Alinhamento do texto */
   margin-top: 40px; /* Espaçamento entre os quadrados e a seção */
-  width: 500px; /* Ajuste a largura como desejar */
+  width: 100%;
 }
 
 .secao-baixo {
   font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
-  font-style: normal; 
+  font-style: normal;
   color: #fff; /* Cor do texto */
   text-align: center; /* Alinhamento do texto */
-  width: 500px; /* Ajuste a largura como desejar */
+  width: 100%;
 }
 
 .quadrado-texto,
 .quadrado-texto1,
 .quadrado-texto2,
 .quadrado-texto3 {
-  width: 500px; /* Ajuste a largura como desejar */
-  height: auto; /* Ajuste a altura como desejar */
+  width: 100%;
+  max-width: 500px;
   background-color: #000000; /* Cor de fundo do quadrado */
   border: 2px solid #ffffff; /* Bordas cinzas */
   position: relative; /* Permite posicionar o texto dentro do quadrado */
@@ -64,22 +64,21 @@ h1 {
   position: relative; /* Posicionamento relativo para dentro do quadrado */
   text-align: center; /* Centraliza o texto */
   font-family: "Stalemate", sans-serif;
-  font-size: 50px; /* Ajuste o tamanho da fonte */
+  font-size: 4vw; /* Ajuste o tamanho da fonte */
   color: #ffffff; /* Cor do texto */
 }
 
 .a2 {
   border: 2px solid #ccc; /* Borda do botão */
   border-radius: 5px; /* Bordas arredondadas */
-  text-align: center; 
-  width: 110px; /* Defina a largura desejada para a navegação */
+  text-align: center;
+  width: 100%;
   padding: 13px; /* Adicione preenchimento interno aos links */
-  justify-content: left;
 }
 
 nav a {
   text-decoration: none;
-  color: #ffffff; 
+  color: #ffffff;
   padding: 0.5em 1em;
   border-radius: 5px; /* Faz borda e arredonda o botão */
   transition: background-color 0.3s;
@@ -98,14 +97,11 @@ nav a:hover {
   .quadrado-texto2,
   .quadrado-texto3 {
     width: 90%;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 5vw; /* Ajusta o tamanho da fonte dentro dos quadrados */
+    margin: 10px auto;
   }
 
   .texto-dentro {
-    font-size: 4vw; /* Ajuste o tamanho do texto dentro dos quadrados */
+    font-size: 5vw;
   }
 
   .botao-voltar {
@@ -115,13 +111,11 @@ nav a:hover {
 
   .secao-baixo1,
   .secao-baixo {
-    width: 100%;
     font-size: 4vw;
     text-align: center;
   }
 
   .a2 {
     width: 100%;
-    max-width: none;
   }
 }
