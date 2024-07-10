@@ -1,1 +1,144 @@
+ @import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
 
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #080808;
+    }
+
+    .wrapper {
+      background-color: #080808;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    svg {
+      font-family: "Stalemate", sans-serif;
+      width: 100%;
+      height: 100%;
+    }
+
+    svg text {
+      animation: stroke 5s infinite alternate;
+      stroke-width: 2;
+      stroke: #7C1CFF;
+      font-size: 100px;
+    }
+
+    @keyframes stroke {
+      0% {
+        fill: rgba(9, 0, 204, 0);
+        stroke: rgba(124, 28, 255, 1);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+      }
+      70% {
+        fill: rgba(9, 0, 204, 0);
+        stroke: rgba(124, 28, 255, 1);
+      }
+      80% {
+        fill: rgba(9, 0, 204, 0);
+        stroke: rgba(124, 28, 255, 1);
+        stroke-width: 3;
+      }
+      100% {
+        fill: rgba(9, 0, 204, 1);
+        stroke: rgba(124, 28, 255, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+      }
+    }
+
+    .botao-voltar {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #080808;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-family: "Margarine", sans-serif;
+    }
+
+    .botao-voltar:hover {
+      background-color: #333;
+      color: #6145ff;
+    }
+
+    .quadrado-texto {
+      width: calc(100% - 40px);
+      max-width: 500px;
+      background-color: #000000;
+      border: 2px solid #ffffff;
+      margin: 20px auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .texto-dentro {
+      text-align: center;
+      font-family: "Stalemate", sans-serif;
+      font-size: 30px;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .secao-baixo1,
+    .secao-baixo {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .a2 {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+      width: 100%;
+      padding: 13px;
+      box-sizing: border-box;
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #333;
+      color: #6145ff;
+    }
+
+    @media screen and (max-width: 600px) {
+      svg text {
+        font-size: 50px;
+      }
+
+      .texto-dentro {
+        font-size: 26px;
+      }
+
+      .quadrado-texto {
+        width: calc(100% - 20px);
+        padding: 10px;
+      }
+
+      .secao-baixo1 {
+        font-size: 14px;
+      }
+
+      .secao-baixo {
+        font-size: 18px;
+      }
+    }
