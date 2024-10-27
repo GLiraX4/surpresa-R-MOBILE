@@ -10,19 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Margarine&display=swap" rel="stylesheet">
     <title>Simplesmente Ray!</title>
     <style>
-     @import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
+
+      /* Estilos gerais */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #080808;
+        color: #fff;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
 
       svg {
         font-family: "Stalemate", sans-serif;
         width: 100%;
-        height: 100%;
+        height: auto;
       }
 
       svg text {
         animation: stroke 5s infinite alternate;
         stroke-width: 2;
         stroke: #0d00c0;
-        font-size: 83px;
+        font-size: 10vw; /* Ajuste de fonte responsivo */
       }
 
       @keyframes stroke {
@@ -37,35 +52,26 @@
           fill: rgba(13, 0, 255, 0);
           stroke: rgb(26, 2, 160);
         }
-        80% {
-          fill: rgba(9,0,204,0);
-          stroke: rgb(5, 2, 160);
-          stroke-width: 3;
+        80%  {
+          fill: rgba(9,0,204,0); stroke: rgb(5, 2, 160); stroke-width: 3; 
         }
         100% {
-          fill: rgba(9,0,204,1);
-          stroke: rgba(64,2,160,0);
-          stroke-dashoffset: -25%;
-          stroke-dasharray: 50% 0;
-          stroke-width: 0;
+          fill: rgba(9,0,204,1); stroke: rgba(64,2,160,0);
+          stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
         }
-      }
-
-      .wrapper {
-        background-color: #080808;
-        padding: 50px;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column; /* Coluna padrão para telas pequenas */
-        align-items: center;
-        gap: 20px;
       }
 
       .imagem {
         display: flex;
         justify-content: center;
+        margin: 20px 0;
+      }
+
+      .imagem img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
       }
 
       .texto {
@@ -76,13 +82,8 @@
         margin: 20px auto;
       }
 
-      /* Ajuste para telas maiores */
+      /* Ajustes para telas maiores */
       @media (min-width: 768px) {
-        .content {
-          flex-direction: row; /* Alinha imagem e texto lado a lado */
-          align-items: flex-start;
-          gap: 40px;
-        }
         .texto {
           font-size: 1.2rem;
           text-align: left;
@@ -99,27 +100,26 @@
                 Rhay
             </text>
         </svg>
-        <br>
-        <div class="content">
-            <div class="imagem">
-                <a href="amizade-bb.html"><img class="ray-ft" src="img/ray-ft.png" alt="rhayssa"></a>
-            </div>
-            <div class="texto">
-                Essa é a Rhay!<br>
-                uma das pessoas mais incríveis que eu conheci, com toda certeza!<br>
-                Esse site é uma surpresa pra você (meio brega, eu sei kk), mas feito pra você Rhay!
-                <br><br>
-                <p>
-                    Um trabalho analisado e aprovado por professores e feito com todo carinho do mundo! Sei que independente de tudo que eu fizer ainda vai ser pouco pra dizer tudo que eu sinto por você, toda admiração, carinho e gratidão!
-                    É inexplicável a beleza que você carrega, a energia boa que você transmite, o quão bom é ver seu sorriso e te ter por perto.
-                </p>
-                <br><br>
-                <p>
-                    Quero que continue sorrindo, que seja forte e corajosa, Deus é contigo, garota! Eu vejo, e sinto isso!
-                    Siga seus sonhos e continue, sem olhar pra trás, pois o Senhor guiará seu caminho.
-                    TE AMO!
-                </p>
-            </div>
+
+        <div class="imagem">
+            <a href="amizade-bb.html"><img class="ray-ft" src="img/ray-ft.png" alt="rhayssa"></a>
+        </div>
+
+        <div class="texto">
+            Essa é a Rhay!<br>
+            uma das pessoas mais incríveis que eu conheci, com toda certeza!<br>
+            Esse site é uma surpresa pra você (meio brega, eu sei kk), mas feito pra você Rhay!
+            <br><br>
+            <p>
+                Um trabalho analisado e aprovado por professores e feito com todo carinho do mundo! Sei que independente de tudo que eu fizer ainda vai ser pouco pra dizer tudo que eu sinto por você, toda admiração, carinho e gratidão!
+                É inexplicável a beleza que você carrega, a energia boa que você transmite, o quão bom é ver seu sorriso e te ter por perto.
+            </p>
+            <br><br>
+            <p>
+                Quero que continue sorrindo, que seja forte e corajosa, Deus é contigo, garota! Eu vejo, e sinto isso!
+                Siga seus sonhos e continue, sem olhar pra trás, pois o Senhor guiará seu caminho.
+                TE AMO!
+            </p>
         </div>
     </div>
 </body>
