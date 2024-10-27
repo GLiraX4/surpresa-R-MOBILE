@@ -58,9 +58,11 @@
 
       .content {
         display: flex;
-        flex-direction: column; /* Coluna padrão para telas pequenas */
+        flex-direction: column;
         align-items: center;
         gap: 20px;
+        width: 100%;
+        text-align: center;
       }
 
       .imagem {
@@ -69,11 +71,10 @@
       }
 
       .texto {
-        font-size: 4vw;
+        font-size: 5vw;
         line-height: 1.6;
         text-align: center;
         max-width: 90%;
-        margin: 20px auto;
       }
 
       /* Ajuste para telas maiores */
@@ -82,10 +83,10 @@
           flex-direction: row; /* Alinha imagem e texto lado a lado */
           align-items: flex-start;
           gap: 40px;
+          text-align: left;
         }
         .texto {
           font-size: 1.2rem;
-          text-align: left;
           max-width: 700px;
         }
       }
