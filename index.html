@@ -58,39 +58,35 @@
 
       .content {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Coluna padrão para telas pequenas */
         align-items: center;
         gap: 20px;
       }
 
-      .imagem img {
-        width: auto;
-        max-width: 100%;
-        height: auto;
+      .imagem {
+        display: flex;
+        justify-content: center;
       }
 
       .texto {
         font-size: 4vw;
         line-height: 1.6;
         text-align: center;
-        width: 100%;
-        max-width: 500px;
-        padding: 10px;
+        max-width: 90%;
+        margin: 20px auto;
       }
 
       /* Ajuste para telas maiores */
       @media (min-width: 768px) {
         .content {
-          flex-direction: row;
+          flex-direction: row; /* Alinha imagem e texto lado a lado */
           align-items: flex-start;
-          justify-content: center;
-          gap: 20px;
+          gap: 40px;
         }
         .texto {
           font-size: 1.2rem;
           text-align: left;
           max-width: 700px;
-          padding: 0;
         }
       }
     </style>
