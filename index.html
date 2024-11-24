@@ -12,27 +12,30 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
 
-     
-
       .wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px;
+        padding: 150px; /* Reduzido para aumentar o espaço ao redor do texto */
       }
 
       svg {
         font-family: "Stalemate", sans-serif;
         width: 100%;
         height: auto;
+        margin-top: 2px; /* Espaçamento superior */
+        margin-bottom: 2px; /* Espaçamento inferior */
       }
 
       svg text {
-        animation: stroke 5s infinite alternate;
-        stroke-width: 2;
-        stroke: #0d00c0;
-        font-size: 15vw; /* Ajuste de fonte responsivo */
-      }
+    font-family: "Stalemate", sans-serif;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 1.5;
+    stroke: #0d00c0;
+    font-size: 10rem; /* AQUI você ajusta o tamanho */
+    fill: none;
+    text-anchor: middle;
+}
 
       @keyframes stroke {
         0% {
@@ -55,12 +58,11 @@
         }
       }
 
-
       .texto {
         font-size: 4vw;
-        line-height: 1.6;
+        line-height: 1.6; /* Espaçamento do texto */
         text-align: center;
-        max-width: 90%;
+        max-width: 100%;
         margin: 20px auto;
       }
 
@@ -77,8 +79,8 @@
 
 <body>   
     <div class="wrapper">
-        <svg>
-            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+      <svg width="100%" height="250px">
+            <text x="50%" y="35%" dy=".350em" text-anchor="middle">
                 Rhay
             </text>
         </svg>
