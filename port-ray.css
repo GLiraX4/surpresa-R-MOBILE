@@ -1,97 +1,106 @@
 body {
-  font-family: "Margarine", sans-serif;
-  font-size: 20px;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    background-color: #080808; /* Configura o fundo */
-}
-
-.botao-voltar {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #080808; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  text-decoration: none; /* Remove sublinhado padrão */
-  border-radius: 5px; /* Borda arredondada */
-  transition: background-color 0.3s; /* Transição suave de cor de fundo */
-}
-
-.botao-voltar:hover {
-  background-color: #333; /* Cor de fundo alterada ao passar o mouse */
-  color:#6145ff;
-}
-
-.imagem {
-  /* Estilos existentes ... */
-  display: grid; /* Habilitar layout CSS grid */
-  grid-template-columns: 1fr auto; /* Definir colunas de grade */
-  align-items: center; /* Alinhar verticalmente */
-  gap: 20px; /* Adicionar espaço entre imagem e texto */
-  float: left; /* Faz a imagem flutuar à esquerda */
-  margin-right: 20px; /* Adiciona uma margem à direita para separar a imagem do texto */
-}
-
-.borda-redonda {
-  /* Estilos existentes ... */
-  grid-column: 1; /* Colocar imagem na primeira coluna */
-    border-radius: 8px; /* Faz borda e arredonda imagens */  
-}
-
-.texto {
-  grid-column: 2; /* Colocar texto na segunda coluna */
-}
-
-.imagem-prv{
- text-align: center;
- font-size: 45px;
-}
-
- /* configuração do rodapé */
- footer {
-  background-color: #0a0a0a;
-  color: white;
-  padding: 35px 0;
-}
-
-.rodape {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.rodape-links a {
-  margin-right: 20px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-.rodape-info {
-  margin-top: 10px;
-}
-
-.a3 {
-  border: 2px solid #ccc; /* Borda do botão */
-  border-radius: 5px; /* Bordas arredondadas */
-  text-align: center;
-  width: 140px; /* Defina a largura desejada para a navegação */
-  padding: 13px; /* Adicione preenchimento interno aos links */
-  justify-content: center;
-  position: absolute;
-  left: 42%;
+    font-family: "Margarine", sans-serif;
+    font-size: 20px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      background-color: #080808; /* Configura o fundo */
   }
   
-  nav a {
+  .botao-voltar {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #080808; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+  }
+  
+  .botao-voltar:hover {
+    background-color: #333; /* Cor de fundo alterada ao passar o mouse */
+    color:#6145ff;
+  }
+  
+  .imagem {
+    /* Estilos existentes ... */
+    display: grid; /* Habilitar layout CSS grid */
+    grid-template-columns: 1fr auto; /* Definir colunas de grade */
+    align-items: center; /* Alinhar verticalmente */
+    gap: 20px; /* Adicionar espaço entre imagem e texto */
+    float: left; /* Faz a imagem flutuar à esquerda */
+    margin-right: 20px; /* Adiciona uma margem à direita para separar a imagem do texto */
+  }
+  
+  .borda-redonda {
+    /* Estilos existentes ... */
+    grid-column: 1; /* Colocar imagem na primeira coluna */
+      border-radius: 8px; /* Faz borda e arredonda imagens */  
+  }
+  
+  .texto {
+    grid-column: 2; /* Colocar texto na segunda coluna */
+  }
+  
+  .imagem-prv{
+   text-align: center;
+   font-size: 45px;
+  }
+  
+   /* configuração do rodapé */
+   footer {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 35px 0;
+  }
+  
+  .rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rodape-links a {
+    
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    color: #ffffff; 
-    padding: 0.5em 1em;
-    border-radius: 5px; /* Faz borda e arredonda o botão */
-    transition: background-color 0.3s;
-    position: relative; /* Adiciona posição relativa para o posicionamento do submenu */
   }
   
-  nav a:hover {
-    background-color: #333; /* Configura a cor de fundo quando passa o mouse em cima do texto (menu de baixo) */
-    color: #6145ff; /* Configura a cor do texto quando passa o mouse em cima do texto (menu de baixo) */
+  .rodape-info {
+    margin-top: 10px;
   }
+  
+  .direita {
+    width: 190px; /* Define a largura da imagem como 500 pixels */
+    float: right; /* Faz a imagem flutuar à esquerda */
+      
+    }
+
+  .a3 {
+    border: 2px solid #ccc; /* Borda do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+    width: 140px; /* Defina a largura desejada para a navegação */
+    padding: 23px; /* Adicione preenchimento interno aos links */
+    justify-content: center;
+    position: absolute;
+    left: 42%;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #ffffff; 
+      padding: 0.5em 1em;
+      border-radius: 5px; /* Faz borda e arredonda o botão */
+      transition: background-color 0.3s;
+      position: relative; /* Adiciona posição relativa para o posicionamento do submenu */
+    }
+    
+    nav a:hover {
+      background-color: #333; /* Configura a cor de fundo quando passa o mouse em cima do texto (menu de baixo) */
+      color: #6145ff; /* Configura a cor do texto quando passa o mouse em cima do texto (menu de baixo) */
+    }
+  
+    
+  
